@@ -1,0 +1,27 @@
+{
+  "name": "testmgr",
+  "version": "1.0.0",
+  "description": "TestManager - manages test results and generates full traceability reports.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+#   "url": "git+https://github.com/h20dragon/testmgrjs.git"
+    "url": "git://github.com/h20dragon/testmgrjs.git"
+  },
+  "keywords": [
+    "TestManager",
+    "report",
+    "assertion",
+    "test",
+    "generator"
+  ],
+  "author": "H20Dragon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h20dragon/testmgrjs/issues"
+  },
+  "homepage": "https://github.com/h20dragon/testmgrjs#readme"
+}
