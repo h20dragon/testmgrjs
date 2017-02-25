@@ -18,7 +18,7 @@
     "generator"
   ],
   "author": "H20Dragon",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/h20dragon/testmgrjs/issues"
   },
