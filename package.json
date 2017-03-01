@@ -1,6 +1,6 @@
 {
   "name": "testmgr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TestManager - manages test results and generates full traceability reports.",
   "main": "index.js",
   "directories": {
