@@ -7,6 +7,7 @@
     "build": "babel lib/ -d build -s",
     "build:lint": "eslint 'lib/**' --ext .js,.jsx --env browser,node",
     "driver": "npm run build && node ./build/drv.js",
+    "driver-debug": "npm run build && DEBUG=qa-test  node ./build/drv.js",
     "test": "npm run build && NODE_ENV=development istanbul cover --report html mocha -- --compilers js:babel-core/register --require ./test/setup.js --recursive test/**/*.spec.js"
   },
   "repository": {
@@ -48,5 +49,8 @@
     "sinon": "^1.17.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "debug": "^2.6.1"
   }
 }
