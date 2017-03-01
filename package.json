@@ -1,14 +1,14 @@
 {
   "name": "testmgr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TestManager - manages test results and generates full traceability reports.",
   "main": "index.js",
   "directories": {
-        "lib": "build/"
-   },
+    "lib": "lib/"
+  },
   "scripts": {
-    "build": "babel lib/ -d build -s",
-    "build:lint": "eslint 'lib/**' --ext .js,.jsx --env browser,node",
+    "build": "babel src/ -d lib -s",
+    "build:lint": "eslint 'src/**' --ext .js,.jsx --env browser,node",
     "driver": "npm run build && node ./build/drv.js",
     "driver-debug": "npm run build && DEBUG=qa-test  node ./build/drv.js",
     "test": "npm run build && NODE_ENV=development istanbul cover --report html mocha -- --compilers js:babel-core/register --require ./test/setup.js --recursive test/**/*.spec.js"
@@ -51,7 +51,8 @@
     "should": "^11.2.0",
     "sinon": "^1.17.7",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "winston": "^2.3.1"
   },
   "dependencies": {
     "debug": "^2.6.1"
