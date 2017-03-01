@@ -1,10 +1,10 @@
 {
   "name": "testmgr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TestManager - manages test results and generates full traceability reports.",
   "main": "index.js",
   "directories": {
-        "lib": "lib/"
+        "lib": "build/"
    },
   "scripts": {
     "build": "babel lib/ -d build -s",
