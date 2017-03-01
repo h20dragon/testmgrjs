@@ -4,8 +4,8 @@
   "description": "TestManager - manages test results and generates full traceability reports.",
   "main": "index.js",
   "directories": {
-        "lib": "build/"
-   },
+    "lib": "build/"
+  },
   "scripts": {
     "build": "babel lib/ -d build -s",
     "build:lint": "eslint 'lib/**' --ext .js,.jsx --env browser,node",
@@ -51,7 +51,8 @@
     "should": "^11.2.0",
     "sinon": "^1.17.7",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "winston": "^2.3.1"
   },
   "dependencies": {
     "debug": "^2.6.1"
