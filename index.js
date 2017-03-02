@@ -5,13 +5,25 @@
 
 'use strict';
 
-const testmgr = require('./lib/testmgr');
-const testcase = require('./lib/testcase');
-const testcomposite = require('./lib/testcomposite');
-const debug = require('./lib/debug');
+const tmgr = require('./lib/testmgr');
+const TestMgr = tmgr.TestMgr;
+let testmanager = null;
 
 
-exports.testmgr = testmgr;
-exports.testcase = testcase;
-exports.requirement = testcomposite;
-exports.debug = debug;
+function createTestMgr(name) {
+    testmanager = new TestMgr(name);
+    return testmanager;
+}
+
+
+function getTestMgr(name) {
+    return testmanager;
+}
+
+
+exports.createTestMgr = createTestMgr;
+exports.getTestMgr = getTestMgr;
+
+// TODO
+// - Add support for controlling logging levels.
+

@@ -3,7 +3,8 @@ import chai from 'chai';
 import {expect} from 'chai';
 import TestCase from '../lib/testcase';
 import TestComposite from '../lib/testcomposite';
-import TestMgr from '../lib/testmgr';
+import { TestMgr } from '../lib/testmgr';
+
 let util = require('util');
 
 let should = chai.should;
