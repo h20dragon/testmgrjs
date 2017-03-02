@@ -1,11 +1,11 @@
 
 import TestCase from './testcase';
 import TestComposite from './testcomposite';
+
 let util = require('util');
 let logger = require('./debug');
 
-export default class TestMgr {
-
+class TestMgr {
 
     constructor(name) {
         this.name = name;
@@ -142,3 +142,5 @@ export default class TestMgr {
     }
 
 }
+
+exports.TestMgr = TestMgr;
